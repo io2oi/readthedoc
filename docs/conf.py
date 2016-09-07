@@ -16,9 +16,20 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:  # only import and set the theme if we're building docs locally
+    import sphinx_rtd_theme
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+# otherwise, readthedocs.org uses their theme by default, so no need to specify it
+
 
 # -- General configuration ------------------------------------------------
 
@@ -50,7 +61,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ngs'
+project = u'Next Generation Scoop'
 copyright = u'2016, Byung-Chul Lee'
 author = u'Byung-Chul Lee'
 
@@ -128,6 +139,11 @@ html_theme = 'alabaster'
 # documentation.
 #
 # html_theme_options = {}
+html_theme_options = {
+    'collapse_navigation': False,
+    'display_version': False,
+    'navigation_depth': 3,
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
@@ -338,3 +354,13 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #
 # texinfo_no_detailmenu = False
+
+# below is inserted by me
+#
+# source: https://github.com/snide/sphinx_rtd_theme
+import sphinx_rtd_theme
+
+html_theme = "sphinx_rtd_theme"
+
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme_path = ["_themes",]

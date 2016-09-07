@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   getting_started.rst
 
 
 Indices and tables
@@ -20,3 +21,4 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+:github_url: https://github.com/io2oi/readthedoc
