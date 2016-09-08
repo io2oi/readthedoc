@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Customizing the look and feel of the site &mdash; Next Generation Scoop 0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Next Generation Scoop 0.1 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Next Generation Scoop
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Sphinx cheat sheet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cheatsheet.html#formatting-text">Formatting text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheatsheet.html#making-a-list">Making a list</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cheatsheet.html#bullet-points">Bullet points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cheatsheet.html#enumerated-points">Enumerated points</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cheatsheet.html#making-a-table">Making a table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheatsheet.html#making-links">Making links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheatsheet.html#this-file">This file</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Next Generation Scoop</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Customizing the look and feel of the site</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/custom_look.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="customizing-the-look-and-feel-of-the-site">
+<span id="custom-look"></span><h1>Customizing the look and feel of the site<a class="headerlink" href="#customizing-the-look-and-feel-of-the-site" title="제목 주소">¶</a></h1>
+<p>The <a class="reference external" href="http://sphinx.pocoo.org/">sphinx</a> site itself looks better than
+the sites created with the default css, so here we&#8217;ll
+invoke T. S. Eliot&#8217;s maxim &#8220;Talent imitates, but genius steals&#8221; and
+grab their css and part of their layout.  As before, you can either
+get the required files <code class="file docutils literal"><span class="pre">_static/default.css</span></code> and
+<code class="file docutils literal"><span class="pre">_templates/layout.html</span></code> from the website or git (see
+<a class="reference internal" href="getting_started.html#fetching-the-data"><span class="std std-ref">Fetching the data</span></a>).  Since I did a git clone before, I will
+just copy the stuff I need from there:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">home</span><span class="p">:</span><span class="o">~/</span><span class="n">tmp</span><span class="o">/</span><span class="n">sampledoc</span><span class="o">&gt;</span> <span class="n">cp</span> <span class="o">../</span><span class="n">sampledoc_tut</span><span class="o">/</span><span class="n">_static</span><span class="o">/</span><span class="n">default</span><span class="o">.</span><span class="n">css</span> <span class="n">_static</span><span class="o">/</span>
+<span class="n">home</span><span class="p">:</span><span class="o">~/</span><span class="n">tmp</span><span class="o">/</span><span class="n">sampledoc</span><span class="o">&gt;</span> <span class="n">cp</span> <span class="o">../</span><span class="n">sampledoc_tut</span><span class="o">/</span><span class="n">_templates</span><span class="o">/</span><span class="n">layout</span><span class="o">.</span><span class="n">html</span> <span class="n">_templates</span><span class="o">/</span>
+<span class="n">home</span><span class="p">:</span><span class="o">~/</span><span class="n">tmp</span><span class="o">/</span><span class="n">sampledoc</span><span class="o">&gt;</span> <span class="n">ls</span> <span class="n">_static</span><span class="o">/</span> <span class="n">_templates</span><span class="o">/</span>
+<span class="n">_static</span><span class="o">/</span><span class="p">:</span>
+<span class="n">basic_screenshot</span><span class="o">.</span><span class="n">png</span>        <span class="n">default</span><span class="o">.</span><span class="n">css</span>
+
+<span class="n">_templates</span><span class="o">/</span><span class="p">:</span>
+<span class="n">layout</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+<p>Sphinx will automatically pick up the css and layout html files since
+we put them in the default places with the default names, but we have
+to manually edit the top of <code class="file docutils literal"><span class="pre">layout.html</span></code> to style the title.
+Let&#8217;s take a look at the layout file: the first part puts a horizontal
+navigation bar at the top of our page, like you see on the <a class="reference external" href="http://sphinx.pocoo.org">sphinx</a> and <a class="reference external" href="http://matplotlib.sourceforge.net/">matplotlib</a> sites, the second part includes
+a title that when we click on it will take us <cite>home</cite> and the last part
+moves the vertical navigation panels to the right side of the page:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">extends</span> <span class="s2">&quot;!layout.html&quot;</span> <span class="o">%</span><span class="p">}</span>
+
+
+<span class="p">{</span><span class="o">%</span> <span class="n">block</span> <span class="n">rootrellink</span> <span class="o">%</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;{{ pathto(&#39;index&#39;) }}&quot;</span><span class="o">&gt;</span><span class="n">home</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;|&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;{{ pathto(&#39;search&#39;) }}&quot;</span><span class="o">&gt;</span><span class="n">search</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;|&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<span class="p">{</span><span class="o">%</span> <span class="n">endblock</span> <span class="o">%</span><span class="p">}</span>
+
+
+<span class="p">{</span><span class="o">%</span> <span class="n">block</span> <span class="n">relbar1</span> <span class="o">%</span><span class="p">}</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;background-color: white; text-align: left; padding: 10px 10px 15px 15px&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;{{ pathto(&#39;index&#39;) }}&quot;</span><span class="o">&gt;&lt;</span><span class="n">h1</span> <span class="n">style</span><span class="o">=</span><span class="s2">&quot;font-size: 3em;&quot;</span><span class="o">&gt;</span><span class="n">Sampledoc</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<span class="p">{{</span> <span class="nb">super</span><span class="p">()</span> <span class="p">}}</span>
+<span class="p">{</span><span class="o">%</span> <span class="n">endblock</span> <span class="o">%</span><span class="p">}</span>
+
+<span class="p">{</span><span class="c1"># put the sidebar before the body #}</span>
+<span class="p">{</span><span class="o">%</span> <span class="n">block</span> <span class="n">sidebar1</span> <span class="o">%</span><span class="p">}{{</span> <span class="n">sidebar</span><span class="p">()</span> <span class="p">}}{</span><span class="o">%</span> <span class="n">endblock</span> <span class="o">%</span><span class="p">}</span>
+<span class="p">{</span><span class="o">%</span> <span class="n">block</span> <span class="n">sidebar2</span> <span class="o">%</span><span class="p">}{</span><span class="o">%</span> <span class="n">endblock</span> <span class="o">%</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Once you rebuild the site with a <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> and reload the page in your browser, you should see a fancier site that looks like this</p>
+<img alt="_static/fancy_screenshot.png" src="_static/fancy_screenshot.png" />
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Byung-Chul Lee.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
