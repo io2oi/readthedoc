@@ -17,7 +17,8 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
-# import sys
+import sys
+sys.path.append(os.path.abspath('sphinxext'))
 # sys.path.insert(0, os.path.abspath('.'))
 
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
@@ -42,6 +43,12 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # ones.
 extensions = [
     'sphinx.ext.mathjax',
+    'matplotlib.sphinxext.only_directives',
+    'matplotlib.sphinxext.plot_directive',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.inheritance_diagram',
+    'numpydoc'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -50,8 +57,13 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+
+source_suffix = ['.rst', '.md']
 
 # The encoding of source files.
 #
@@ -364,3 +376,5 @@ html_theme = "sphinx_rtd_theme"
 
 # html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme_path = ["_themes",]
+
+

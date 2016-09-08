@@ -11,8 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   getting_started.rst
-
+   _post/DNA-quantity.md
+   _post/cheatsheet.rst
 
 Indices and tables
 ==================

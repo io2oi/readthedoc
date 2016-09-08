@@ -104,3 +104,21 @@ some custom css, and update the navigation panels to look more like
 the `sphinx <http://sphinx.pocoo.org/>`_ site itself -- see
 :ref:`custom_look`.
 
+
+연습
+----
+.. sourcecode:: ipython
+  In [69]: lines = plot([1,2,3])
+
+.. math::
+  W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
+
+.. plot::
+
+   import matplotlib.pyplot as plt
+   import numpy as np
+   x = np.random.randn(1000)
+   plt.hist( x, 20)
+   plt.grid()
+   plt.title(r'Normal: $\mu=%.2f, \sigma=%.2f$'%(x.mean(), x.std()))
+   plt.show()
