@@ -12,7 +12,7 @@ Contents:
    :maxdepth: 2
 
    _post/DNA-quantity.md
-   _post/cheatsheet.rst
+   _post/ai_beginner_chap1.rst
 
 Indices and tables
 ==================
