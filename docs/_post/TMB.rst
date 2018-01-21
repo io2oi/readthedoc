@@ -19,7 +19,7 @@ Comprehensive Analysis of Hypermutation in Human Cacner
 Hypermutation is enriched for replication repair defects in childhood cancers
 -----------------------------------------------------------------------------
 
-소아암을 대상으로 하여 `hypermutation` 을 어느 정도로 정해야 하는지를 파악 하였다. 이 연구에서는 `10Mut/Mb` 를 hypermutation으로 하였다. 그리고 `Ultra-hypermutation` 은 `>100` Mut/Mb 로 하였다. ypermutatnt mutation 은 `POLE` 와 `POLD1` 의 기능상실에서 많이 관찰 되었다.
+소아암을 대상으로 하여 `hypermutation` 을 어느 정도로 정해야 하는지를 파악 하였다. 이 연구에서는 `10Mut/Mb` 를 hypermutation으로 하였다. 그리고 `Ultra-hypermutation` 은 `>100` Mut/Mb 로 하였다. ypermutatnt mutation 은 `POLE (63,598bp) <https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr12%3A133200348%2D133263945&hgsid=653230803_zOqa7hll7AIIIFz5BPTDtzlx6bA9>`_ 와 `POLD1 (33,696bp) <https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr19%3A50887580%2D50921275&hgsid=653230803_zOqa7hll7AIIIFz5BPTDtzlx6bA9>`_ 의 기능상실에서 많이 관찰 되었다.
 
 Replication Repair Deficiency drives a mutator phenotype in many childhood and adult cancer
 -------------------------------------------------------------------------------------------
@@ -29,5 +29,3 @@ Replication Repair Deficiency drives a mutator phenotype in many childhood and a
 
 
  처음으로:  `j.cell.2017.09.048`_
-
-
