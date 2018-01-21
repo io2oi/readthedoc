@@ -9,10 +9,9 @@ Welcome to ngs's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   _post/DNA-quantity.md
-   _post/ai_beginner_chap1.rst
+   _post/TMB.rst
 
 Indices and tables
 ==================

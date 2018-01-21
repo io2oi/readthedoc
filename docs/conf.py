@@ -51,11 +51,11 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 #     'numpydoc'
 # ]
 extensions = [
-    'sphinx.ext.mathjax',
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.inheritance_diagram',
-    'numpydoc'
+    'numpydoc',
+    'sphinx.ext.imgmath'
 ]
 
 
